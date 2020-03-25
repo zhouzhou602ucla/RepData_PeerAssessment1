@@ -292,7 +292,7 @@ new_dt$weekday &lt;- as.factor(new_dt$weekday)
 levels(new_dt$weekday)</code></pre>
 <pre><code>## [1] &quot;weekday&quot; &quot;weekend&quot;</code></pre>
 <ol start="2" style="list-style-type: decimal">
-<li>Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis). The plot should look something like the following, which was created using simulated data:</li>
+<li>Make a panel plot containing a time series plot (i.e. type = “l”) of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis).</li>
 </ol>
 <pre class="r"><code>library(lattice)
 xyplot(steps~interval|weekday, data = new_dt, type = &quot;l&quot;, layout=c(1,2))</code></pre>
